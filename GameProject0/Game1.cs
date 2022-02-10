@@ -60,8 +60,9 @@ namespace GameProject0
             _animatedSprites[1].Draw(gameTime, _spriteBatch, _spriteSheet, new Vector2(700, 400));
             _spriteBatch.Draw(_spriteSheet, new Vector2(0,0), new Rectangle(96, 16, 16, 16), Color.White, 0f, new Vector2(0, 0), (float)5, SpriteEffects.None, 0);
             _spriteBatch.Draw(_spriteSheet, new Vector2(GraphicsDevice.Viewport.Width - 80, 0), new Rectangle(96, 16, 16, 16), Color.White, 0f, new Vector2(0, 0), (float)5, SpriteEffects.None, 0);
-            _spriteBatch.DrawString(_bangers, "Springy Cactus", new Vector2(GraphicsDevice.Viewport.Width / 2 - 145, GraphicsDevice.Viewport.Height / 2), Color.Goldenrod);
-            _spriteBatch.DrawString(_bangers, "Press esc or B to exit.", new Vector2(GraphicsDevice.Viewport.Width / 2 - 185, GraphicsDevice.Viewport.Height - 45), Color.Black);
+            _spriteBatch.DrawString(_bangers, "Springy Cactus", new Vector2(GraphicsDevice.Viewport.Width / 2 - 200, GraphicsDevice.Viewport.Height / 2 - 50), Color.Goldenrod);
+            _spriteBatch.DrawString(_bangers, "Press A to spring on in!", new Vector2(GraphicsDevice.Viewport.Width / 2 - 170, GraphicsDevice.Viewport.Height / 2 + 25), Color.Goldenrod, 0, Vector2.Zero, .5f, SpriteEffects.None, 0);
+            _spriteBatch.DrawString(_bangers, "Press esc or B to exit.", new Vector2(GraphicsDevice.Viewport.Width / 2 - 105, GraphicsDevice.Viewport.Height - 45), Color.Black, 0, Vector2.Zero, .3f, SpriteEffects.None, 0);
             _spriteBatch.End();
             base.Draw(gameTime);
         }
